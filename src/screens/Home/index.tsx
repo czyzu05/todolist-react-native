@@ -12,12 +12,12 @@ const WelcomeText = styled.Text`
 `;
 
 const CustomImage = styled.Image`
-  width: 100%;
-  height: 80%;
+  width: 150px;
+  height: 150px;
 `;
 const WelcomeTextHeader = styled.Text`
-  font-size: 16px;
-  color: ${Colors.black};
+  font-size: 20px;
+  color: ${Colors.silverWhite};
   padding: 30px 10px;
   text-align: center;
 `;
@@ -25,10 +25,12 @@ const WelcomeTextHome = styled.Text`
   font-size: 16px;
   color: ${Colors.black};
   padding: 10px 10px;
+  line-height: 24px;
+  text-align: justify;
 `;
 const WrapperHome = styled.View`
   flex: 1;
-  background-color: papayawhip;
+  background-color: ${Colors.bluePurple};
 `;
 
 const HeaderHome = styled.View`
@@ -37,18 +39,18 @@ const HeaderHome = styled.View`
 `;
 const ImgWrapper = styled.View`
   flex: 1;
-
-  width: 50%;
   justify-content: center;
+  align-items: center;
 `;
 const SectionHome = styled.View`
   flex: 1;
-  background-color: papayawhip;
+  background-color: ${Colors.bluePurple};
   align-items: center;
 `;
 const TitleHeaderHome = styled.View`
   flex: 1;
   width: 50%;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -61,7 +63,7 @@ const Home: FC<IHomeProps> = (props) => {
     <WrapperHome>
       <HeaderHome>
         <ImgWrapper>
-          {<CustomImage source={require("../../assets/logo.png")} />}
+          {<CustomImage source={require("../../assets/checkV2.png")} />}
         </ImgWrapper>
         <TitleHeaderHome>
           <WelcomeTextHeader>WELCOM IN MY TODO APP</WelcomeTextHeader>
