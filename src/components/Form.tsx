@@ -12,10 +12,16 @@ const Wrapper = styled.View`
 `
 
 const CustomTextInput = styled.TextInput`
-    border: 1px solid black;
-    padding: 10px;
+    border: 2px solid #9896D9;
+    padding: 7px;
     color: black;
     width: 100%;
+    borderRadius: 6;
+    margin: 6px 0;
+`
+
+const ButtonWrapper = styled.View`
+    margin-top: 40px;
 `
 
 type SetNewElemTodoList = ReturnType<typeof setNewElemTodoList>
@@ -48,7 +54,10 @@ const Form: FC<{switchView(formView: boolean)}> = props => {
         <Wrapper>
             <CustomTextInput value={nameInput} onChange={nameValueChange} placeholder="Name" />
             <CustomTextInput value={descrInput} onChange={descriptionValueChange} placeholder="Description" />
-            <Button title="Zapisz" onPress={saveDate} />
+
+            <ButtonWrapper>
+                <Button title="Add" onPress={saveDate} color="#9896D9" />
+            </ButtonWrapper>
         </Wrapper>
     )
 }

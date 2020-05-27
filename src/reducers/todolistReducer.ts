@@ -12,7 +12,7 @@ const defaultState = (): ITodolistReducer => ({
     },
     {
         name: 'Druga',
-        description: 'Notatkaa'
+        description: 'Notatka'
     }]
 });
 
